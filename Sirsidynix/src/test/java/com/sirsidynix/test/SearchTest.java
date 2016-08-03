@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
- * Created by gpaez on 2/8/2016.
+ * Created by gpaez
  */
 public class SearchTest extends  BaseTest{
 

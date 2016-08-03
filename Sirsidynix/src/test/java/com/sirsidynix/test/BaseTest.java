@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by gpaez on 2/8/2016.
+ * Created by gpaez
  */
 public class BaseTest {
 

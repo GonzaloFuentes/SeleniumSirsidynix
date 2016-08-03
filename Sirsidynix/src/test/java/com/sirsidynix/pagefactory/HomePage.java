@@ -2,11 +2,12 @@ package com.sirsidynix.pagefactory;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Reporter;
 
 /**
- * Created by gpaez on 2/8/2016.
+ * Created by gpaez
  */
-public class HomePage  extends  BasePage {
+public class HomePage {
 
     @FindBy(id = "edit-search-block-form--2")
     WebElement searchInput;
@@ -19,6 +20,7 @@ public class HomePage  extends  BasePage {
      * @param searchText String with the text to search
      * */
     public void completeSearchInput(String searchText){
+        Reporter.log("Home Page | Search the text '"+searchText+"'.\n");
         searchInput.sendKeys(searchText);
     }
 
@@ -26,6 +28,7 @@ public class HomePage  extends  BasePage {
      * Submit search
      * */
     public void submitSearch(){
+        Reporter.log("Home Page | Click 'Search'.\n");
         searchSubmitButton.click();
     }
 
